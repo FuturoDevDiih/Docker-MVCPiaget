@@ -9,4 +9,6 @@ public class ApplicationDbContext : IdentityDbContext
         : base(options)
     {
     }
+
+    public DbSet<Docker_MVCPiaget.Models.Aluno> Aluno { get; set; } = default!;
 }
